@@ -1,0 +1,3 @@
+""" Voting plugin (placeholder) """
+
+class VotingCapability: ...

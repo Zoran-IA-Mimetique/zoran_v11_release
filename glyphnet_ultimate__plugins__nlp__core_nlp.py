@@ -1,0 +1,3 @@
+""" Core NLP plugin (placeholder) """
+
+class CoreNLPCapability: ...

@@ -1,0 +1,3 @@
+""" NATS Client (placeholder) """
+
+class NATSClient: ...

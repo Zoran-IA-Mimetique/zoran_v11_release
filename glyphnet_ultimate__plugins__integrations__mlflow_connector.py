@@ -1,0 +1,3 @@
+""" MLflow connector (placeholder) """
+
+class MLflowConnectorCapability: ...

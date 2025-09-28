@@ -1,10 +1,9 @@
 cff-version: 1.2.0
-title: "ZORAN • GlyphNet"
-message: "If you use this software, please cite it."
-type: software
+title: "GlyphNet Ultimate"
 authors:
   - family-names: "Tabary"
     given-names: "Frédéric"
-repository-code: "https://github.com/OWNER/REPO"
-version: "1.4.0"
-date-released: "2025-09-28"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+date-released: 2025-09-01
+version: "v11"
+license: "MIT"

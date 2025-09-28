@@ -1,0 +1,3 @@
+""" ZKP Circuits (placeholder) """
+
+class EthicalComplianceCircuit: ...

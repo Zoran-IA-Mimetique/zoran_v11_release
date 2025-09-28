@@ -1,0 +1,3 @@
+""" PolyResonator (placeholder) """
+
+class PolyResonator: ...

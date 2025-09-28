@@ -1,0 +1,5 @@
+name: "Analyse de Rapport Médical Simple"
+pipeline:
+  - capability: "nlp.core_nlp"
+    params: { text: "$initial.medical_report_text", operation: "extract_entities" }
+    output_as: "extracted_entities"

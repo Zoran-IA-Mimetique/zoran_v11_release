@@ -1,0 +1,3 @@
+""" ZKP Prover (placeholder) """
+
+class ZKPProver: ...

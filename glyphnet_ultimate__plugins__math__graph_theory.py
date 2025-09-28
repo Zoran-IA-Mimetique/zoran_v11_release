@@ -1,0 +1,3 @@
+""" Graph Theory plugin (placeholder) """
+
+class GraphTheoryCapability: ...

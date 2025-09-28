@@ -1,0 +1,3 @@
+""" LLM Client plugin (placeholder) """
+
+class LanguageModelClientCapability: ...

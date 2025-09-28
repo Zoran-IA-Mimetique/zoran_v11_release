@@ -1,66 +1,79 @@
-# ZORAN • GlyphNet — README Principal
+# GlyphNet Ultimate — Zoran v11 (README Principal)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Build](https://img.shields.io/badge/build-GitHub_Actions-brightgreen.svg)](#) [![Coverage](https://img.shields.io/badge/coverage-codecov-blue.svg)](#) [![DOI](https://img.shields.io/badge/DOI-Zenodo_pending-lightgrey.svg)](#)
+[![Build](https://img.shields.io/github/actions/workflow/status/zoran-labs/glyphnet/ci.yml?label=CI)](#)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](#)
+[![Coverage](https://img.shields.io/badge/coverage-report-blue)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+[![PyPI](https://img.shields.io/pypi/v/glyphnet-ultimate.svg?label=PyPI)](#)
 
-> **Ce README est le point d’entrée principal de *l’ensemble* des livrables Zoran/GlyphNet.**  
-> Dernière génération : **2025-09-28 13:29 UTC**
+> **Ce README est le _README principal_ de l’ensemble.**  
+> Il remplace et unifie les anciens README.  
+> _Temps de prise en main (demande client) : ~1h30._
 
-## Résumé (court)
-ZORAN/GlyphNet est une infrastructure de confiance pour l’IA : capacités stateless orchestrées en pipelines, mémoire ZDM, fédération distribuée, artefacts vérifiables (SBOM/C2PA), CI/CD et conformité (AI Act).
-
-## Résumé (étendu)
-Le projet consolide un noyau orienté *capabilities* (plugins) et un orchestrateur de pipelines. Il fournit des briques prêtes à l’emploi pour la simulation, la gouvernance, la sécurité et la conformité : ZDM persistante, PQC (liboqs), ZKP (ZoKrates), intégrations MLOps (MLflow), bus de messages (NATS), CI/CD, benchmarks et tests avancés (chaos, mutation). L’objectif est un dépôt GitHub **propre**, **reproductible** et **citables** par la communauté.
+---
 
 ## Table des matières
+
+- [Vision & Pitch](#vision--pitch)
+- [Architecture & Périmètre](#architecture--périmètre)
+- [Fonctionnalités Implémentées](#fonctionnalités-implémentées)
 - [Installation](#installation)
-- [Structure du dépôt](#structure-du-dépôt)
-- [Documentation (`docs/`)](#documentation-docs)
-- [Batches de code (`batch_xxx/`)](#batches-de-code-batch_xxx)
-- [QA & Vérifications](#qa--vérifications)
-- [Citations & DOI](#citations--doi)
+- [Démos & Exemples](#démos--exemples)
+- [Qualité & Sécurité](#qualité--sécurité)
+- [Conformité EU (ETSI, AI Act)](#conformité-eu-etsi-ai-act)
+- [Roadmap](#roadmap)
+- [Licence](#licence)
+
+---
+
+## Vision & Pitch
+
+GlyphNet est un **système d’exploitation pour l’IA de confiance** : gouvernance _as code_, traçabilité, cryptographie PQC et outils d’audit.  
+Les documents fournis définissent la vision, les modules et les tests de référence.
+
+## Architecture & Périmètre
+
+- **Core** : modèle Pydantic immuable, signature/verif. PQC, moteurs fédérés.  
+- **Gouvernance EU** : vérifications ETSI + prêt AI Act.  
+- **IA avancée** : raisonnement neuro‑symbolique, RL éthique.  
+- **ZKP** : génération/vérif. de preuves (simulation de référence).  
+- **Fédération** : agrégation & consensus distribués.  
+- **Outillage** : injecteurs YAML, sandbox plugins, CI/CD.
+
+## Fonctionnalités Implémentées
+
+- Modèle central, PQC (référence), conformité ETSI, ZKP (réf.), neuro‑symbolique, RL éthique, fédération.  
+- **CI/CD** : lint, tests, coverage, publication PyPI (workflows fournis).  
+- **Sécurité** : logs immuables, ZDM Merkle, SBOM & VEX (squelettes).
 
 ## Installation
-Ce paquet est un *release bundle* à plat. L’installation via `pip install -e .` est optionnelle et concerne surtout les métadonnées.
 
 ```bash
-pip install -e .  # optionnel
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt  # (si présent)
+# Sinon :
+pip install pydantic pytest
 ```
 
-## Structure du dépôt
-```
-zoran_v11_release_batches/
-├── README.md
-├── CITATION.cff
-├── LICENSE
-├── pyproject.toml
-├── docs/
-│   ├── ZORAN_COMPLET_V11_AVEC_PITCH.md
-│   ├── ZORAN_COMPLET_PYTHON_GLYPHNET_V11_SUITE_2.md
-│   ├── ZORAN_COMPLET_GLYPHNET_PYTHON_3.md
-│   ├── RAPPORT_EXECUTION_ETAPE_2.md
-│   ├── RAPPORT_EXECUTION_ETAPE_3.md
-│   ├── RAPPORT_EXECUTION_ETAPE_4.md
-│   ├── RAPPORT_EXECUTION_ETAPE_5.md
-│   └── EPILOGUE.md
-├── batch_001/
-│   ├── ... (≤ 100 fichiers)
-└── batch_00N/
-    └── ... (si nécessaire)
-```
+## Démos & Exemples
 
-## Documentation (`docs/`)
-- Étapes 2 → 5 & Épilogue : rapports détaillés, objectifs & résultats.
-- Textes intégraux des sources pour traçabilité scientifique.
+Voir `glyphnet_ultimate/examples` et `glyphnet_ultimate/demonstration.py`.
 
-## Batches de code (`batch_xxx/`)
-- **À plat** (flat), max **100 fichiers par dossier**.
-- Nommage basé sur le chemin originel (séparateurs `/` remplacés par `_`).
+## Qualité & Sécurité
 
-## QA & Vérifications
-- Vérification syntaxe Python (**10 passes** par fichier).
-- Batching automatique ≤ 100 fichiers par dossier.
-- Rapport QA dans `docs/QA_REPORT.md`.
+- Tests unitaires (voir `glyphnet_ultimate/tests`).
+- Journalisation immuable (`security/logger.py`) & mémoire ZDM (`memory/zdm.py`).
+- Workflows GitHub Actions : `ci.yml`, `advanced_tests.yml`.
 
-## Citations & DOI
-- Voir `CITATION.cff` (GitHub *Cite this repository*).
-- DOI Zenodo : badge “pending” jusqu’à enregistrement du dépôt.
+## Conformité EU (ETSI, AI Act)
+
+- Vérifications programmatiques via `eu_standard/etsi.py`.
+- Preuves partageables via `zkp/` (simulation) et signature PQC.
+
+## Roadmap
+
+Voir `ROADMAP.md` (standardisation, intégrations réelles liboqs/ZKP, MLOps).
+
+## Licence
+
+MIT — voir `LICENSE`.

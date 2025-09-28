@@ -1,0 +1,3 @@
+""" Prospect Theory plugin (placeholder) """
+
+class ProspectTheoryCapability: ...
