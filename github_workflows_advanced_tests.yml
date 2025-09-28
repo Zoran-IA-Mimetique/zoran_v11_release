@@ -1,0 +1,34 @@
+name: Advanced Quality Assurance
+on:
+  schedule:
+    - cron: '0 2 * * 0'  # Sundays at 02:00
+  workflow_dispatch:
+jobs:
+  chaos_testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -e ".[testing]"
+      - name: Run Chaos Tests
+        run: pytest tests/test_chaos_federation.py
+  mutation_testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -e ".[testing]"
+      - name: Run Mutation Tests
+        run: |
+          pip install mutmut
+          mutmut run
+          mutmut results > mutmut_results.txt
+          python scripts_check_mutation_score.py mutmut_results.txt --threshold 85.0
