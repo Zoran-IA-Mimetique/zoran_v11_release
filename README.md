@@ -94,6 +94,31 @@ make test
 * Agroalimentaire, Réseaux sociaux, Supply chain, Assurance, Défense
 * Médias, Environnement, Smart City, E-commerce, Maritime
 * Élections, Hôpital, Mines, Tourisme, Crypto
+  
+# GlyphNet / Zoran v11 – Pack Complet de Diffusion
+
+📦 Ce pack contient l’ensemble des livrables du **Livre Blanc GlyphNet / Zoran v11**, première proposition académique et technique de gouvernance de l’IA **“as code”**.
+
+## Contenu
+- 📘 **Livre_Blanc_GlyphNet_Zoran_v11.pdf** – Version académique complète.  
+- 📊 **Livre_Blanc_GlyphNet_Zoran_v11_Figures.pdf** – Version enrichie avec schémas et infographies.  
+- 🌍 **Livre_Blanc_GlyphNet_Zoran_v11_Public.pdf** – Version publique stylisée avec résumé exécutif et cas d’usage vulgarisés.  
+- 📑 **Resume_Academique_GlyphNet_IMRaD.pdf** – Résumé scientifique (6-8 pages) au format IMRaD, prêt pour arXiv/NeurIPS.  
+- 💻 **glyphnet_zoran_v11_repo.zip** – Repo skeleton GitHub : noyau, glyphlets de base, tests reproductibles, CI/CD.  
+- 🎨 **figures/** – Illustrations (architecture, pipeline CI/CD, rollback ΔM11.3, comparatif frameworks).  
+
+## Objectif
+- Offrir un cadre **exécutable, reproductible et auditable** pour la gouvernance IA.  
+- Démontrer des **preuves concrètes** sur des cas santé, finance, mobilité et DevOps.  
+- Fournir à la fois une **base académique** (articles, IMRaD, bibliographie) et un **kit pratique open-source** (repo, tests, figures).  
+
+## Liens utiles
+- Gamma : https://zoran-2040-asim-swxr6lh.gamma.site/  
+- GitHub Hub : https://github.com/AIformpro/Zoran-2040-aSiM-Towards-a-Public-Ethical-and-Resilient-Super-Intelligence/blob/main/README.md  
+- Contact : tabary01@gmail.com  
+
+---
+
 
 ## ✅ Objectif
 
