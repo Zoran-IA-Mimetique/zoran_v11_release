@@ -70,6 +70,36 @@ Voir `glyphnet_ultimate/examples` et `glyphnet_ultimate/demonstration.py`.
 - Vérifications programmatiques via `eu_standard/etsi.py`.
 - Preuves partageables via `zkp/` (simulation) et signature PQC.
 
+## Plug-ins
+- GlyphNet Proofs of Value – README
+
+Ce répertoire contient **30 plugins Python** démontrant la pertinence de GlyphNet dans des cas d’usage critiques.
+Chaque plugin fournit une **preuve concrète, exécutable et vérifiable**.
+
+## 🚀 Utilisation
+
+```bash
+# Exécuter la suite complète
+make run
+
+# Lancer les tests unitaires
+make test
+```
+
+## 📊 Cas couverts
+
+* Santé (dérive), Finance (biais), Mobilité (garde-fous), Audit logiciel
+* RGPD, ONG, LLM, IoT, Éducation, Cybersécurité
+* Énergie, Aérien, Justice, Climat, Banque
+* Agroalimentaire, Réseaux sociaux, Supply chain, Assurance, Défense
+* Médias, Environnement, Smart City, E-commerce, Maritime
+* Élections, Hôpital, Mines, Tourisme, Crypto
+
+## ✅ Objectif
+
+Fournir une **preuve par usage irréfutable** : détection automatique de dérives, biais, fraudes, anomalies et non-conformités, pour valider GlyphNet auprès de partenaires pilotes.
+
+
 ## Roadmap
 
 Voir `ROADMAP.md` (standardisation, intégrations réelles liboqs/ZKP, MLOps).
