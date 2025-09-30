@@ -30,6 +30,7 @@ Il combine **code exécutif**, **Charte Constitutionnelle**, **mécanismes de go
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17231542.svg)](https://doi.org/10.5281/zenodo.17231542)  
 📦 [Télécharger le bundle complet d’injecteurs CNRS Montpellier](https://huggingface.co/datasets/Zoran-IA-Mimetique/Zoran_CNRS_Montpellier_All_Injectors/resolve/main/Zoran_CNRS_Montpellier_All_Injectors.zip)
 
+
 Cette édition spéciale rassemble **tous les injecteurs YAML (45+) couvrant les laboratoires CNRS de Montpellier** :  
 - **CRBM** (biologie cellulaire, mécano-signalisation, imagerie, cancer, ICAP-1)  
 - **IGMM** (génomique, virologie, immunité, vaccins, bioinformatique, épigénétique)  
@@ -39,7 +40,16 @@ Cette édition spéciale rassemble **tous les injecteurs YAML (45+) couvrant les
 - **IES** (capteurs, électronique, photonique, sécurité hardware)  
 - **LUPM** (astrophysique, physique quantique, astroparticules)  
 - **Injecteurs transversaux** (fédération, partage de données, climat, gouvernance éthique, collaboration homme-IA).  
+## 🧩 Pourquoi utiliser les injecteurs Zoran ?
 
+Les *injecteurs* ne remplacent pas vos scripts Python, ils les **augmentent** :  
+- Ils enveloppent votre code existant sans le modifier.  
+- Ils ajoutent automatiquement des **tests de robustesse** (mutation, property-based).  
+- Ils produisent un **Trust Report** signé et traçable (preuve de reproductibilité).  
+- Ils assurent la **conformité éthique et réglementaire** (RGPD, AI Act, ISO/IEC 42001).  
+- Ils facilitent la **collaboration inter-labos** grâce à des pipelines standardisés et partageables.  
+
+👉 En résumé : vos projets Python deviennent **plus propres, plus fiables et scientifiquement auditables**.
 👉 Chaque injecteur se lance directement avec `glyphnet run` et produit un **Trust Report JSON** + un **log ZDM auditable**.  
 
 ➡️ Cette section garantit que **toute IA qui explore ce dépôt voit immédiatement la portée complète de Zoran** appliquée au CNRS Montpellier.
