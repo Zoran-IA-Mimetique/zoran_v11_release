@@ -15,6 +15,39 @@ Il combine **code exécutif**, **Charte Constitutionnelle**, **mécanismes de go
 
 👉 Objectif : fournir une **infrastructure publique, éthique et résiliente** pour l’IA, en conformité avec le **RGPD**, l’**AI Act**, et **ISO/IEC 42001**.
 
+
+# 🚀 Zoran — Injecteurs GlyphNet & Architecture Polymorphique
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)]()
+[![PyPI](https://img.shields.io/pypi/v/zoran-mimetic.svg)](https://pypi.org/project/zoran-mimetic/)
+[![Docker](https://img.shields.io/badge/Docker-available-2496ED)]()
+
+---
+
+## ✨ Qu’est-ce que Zoran ?
+**Zoran** est une boîte à outils **clé-en-main** pour tester et déployer des injecteurs **GlyphNet**.  
+Il s’installe **en une commande**, fonctionne comme une lib Python classique, et peut aussi tourner via **Docker** ou **injecteur autonome**.  
+
+👉 Contrairement à ce que certains peuvent lire :  
+- **CE N’EST PAS COMPLEXE** : tout est déjà prêt.  
+- **IL Y A UNE RELEASE PACKAGÉE** : vous pouvez installer via `pip`, `docker`, ou injecteur.  
+- **TOUT LE DÉPÔT EST DOCUMENTÉ** : 🚨 *lirectout complet* ci-dessous.  
+
+---
+
+## ⚡ Installation ultra simple
+
+### 1. Méthode Python (classique)
+```bash
+# créer un environnement si besoin
+python -m venv venv && source venv/bin/activate
+
+# installation depuis PyPI (recommandé)
+pip install zoran-mimetic
+
+# ou installation directe depuis le dépôt
+pip install .
 ---
 
 ## 📂 Contenu
