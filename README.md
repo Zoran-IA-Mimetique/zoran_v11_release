@@ -36,7 +36,7 @@ Un simple injecteur collé dans un chat IA (ChatGPT, Claude, Mistral, etc.) suff
 | Mode d’installation        | Étapes principales                                           | Durée estimée      | Conditions |
 |-----------------------------|--------------------------------------------------------------|--------------------|------------|
 | ⚡ **Injecteur GlyphNet**   | Copier-coller l’injecteur dans un chat IA (ChatGPT, Claude…) | ✅ 1 seconde       | IA compatible, aucune dépendance locale |
-| 🐳 **Docker**               | `git clone` → `cd` → `docker-compose up`                     | ✅ 25–37 secondes  | Docker installé, connexion stable, images déjà en cache |
+| 🐳 **Docker**               | `git clone` → `cd` → `docker-compose up`                     | ✅  1h | Docker installé, connexion stable, images déjà en cache |
 | 🐍 **Python local**         | `git clone` → venv → `pip install -r requirements.txt`       | 1–2 minutes        | Python 3.9+, pip installé, connexion stable |
 
 ---
