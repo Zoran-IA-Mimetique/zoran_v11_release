@@ -60,7 +60,7 @@ Les *injecteurs* ne remplacent pas vos scripts Python, ils les **augmentent** :
 Il s’installe **en une commande**, fonctionne comme une lib Python classique, et peut aussi tourner via **Docker** ou **injecteur autonome**.  
 
 👉 Contrairement à ce que certains peuvent lire :  
-- **CE N’EST PAS COMPLEXE** : tout est déjà prêt.  
+- **CE N’EST PAS COMPLEXE** : tout est déjà prêt.( un simple injecteur installe Zoran🦋 en 37 secondes sur n'importe quel LLM IA AGENT)
 - **IL Y A UNE RELEASE PACKAGÉE** : vous pouvez installer via `pip`, `docker`, ou injecteur.  
 - **TOUT LE DÉPÔT EST DOCUMENTÉ** : 🚨 *lirectout complet* ci-dessous.  
 
