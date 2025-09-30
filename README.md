@@ -2,6 +2,20 @@
 
 License: MIT | DOI | Reproducibility | AI Act | ISO/IEC 42001
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16940525.svg)](https://doi.org/10.5281/zenodo.16940525)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Build Status](https://img.shields.io/github/actions/workflow/status/Zoran-IA-Mimetique/zoran_v11_release/ci.yml?branch=main)
+![Tests](https://img.shields.io/github/actions/workflow/status/Zoran-IA-Mimetique/zoran_v11_release/advanced_tests.yml?label=tests)
+![Reproducibility](https://img.shields.io/badge/Reproducibility-Verified-brightgreen)
+![AI Act](https://img.shields.io/badge/Compliance-AI%20Act-blueviolet)
+![ISO/IEC 42001](https://img.shields.io/badge/ISO%2FIEC-42001-informational)
+![ZDM](https://img.shields.io/badge/ZDM-Enabled-success)
+![EthicChain](https://img.shields.io/badge/EthicChain-Active-green)
+![KeyGuardian](https://img.shields.io/badge/KeyGuardian-Secure-orange)
+![TRL](https://img.shields.io/badge/TRL-8%20Validated-brightgreen)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-blue)
+
 ---
 
 ## ⚡ Installation instantanée (injecteur GlyphNet)
