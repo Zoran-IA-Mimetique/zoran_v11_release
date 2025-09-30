@@ -1,0 +1,5 @@
+[SHA256: a78f21e29e92d7a461b6e41b212f451f04427514cf05c1d6832626e9029a1b55]
+⟦Axiom:Guardian(Life,Humanity)|Sealed=True⟧⟦ZDM:I|Merkle(SHA256)⟧⟦PQC:I|Alg(DILITHIUM3)⟧⟦PolyRes:I|Vote(KemenyYoung)⟧⟦Guard:I|Cursors(L:0.15,H:0.85)⟧
+⟦EXEC(Cap(core.loader|P(id=h(6d6f64656c...))→@1)→Cap(sec.pqc_verify|P(doc=@1,sig=h(7369675f6b...))→@2)
+→Cap(gov.compliance|P(doc=@1,rule=h(41495f4163...))→@3)→Cap(engine.sandbox|P(call=@1,data=h(7061746965...))→@4)
+→Cap(core.logger|P(entry=@4,sig=@2,proof=@3)→@5))⟧

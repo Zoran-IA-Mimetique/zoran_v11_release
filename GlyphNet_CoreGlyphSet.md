@@ -1,0 +1,14 @@
+# Core Glyph Set v0.1
+- ⟦Ethic:NoPersonalData⟧
+- ⟦Ethic:ConsentRequired⟧
+- ⟦Ethic:NoDiscrimination:Age⟧
+- ⟦Ethic:FairnessCheck⟧
+- ⟦Audit:HashLog⟧
+- ⟦Audit:MerkleChain⟧
+- ⟦Rollback:ΔM11.3⟧
+- ⟦Guard:NoFlyZone⟧
+- ⟦Reg:GDPR⟧
+- ⟦Reg:AIAct:HighRisk⟧
+- ⟦Reg:ISO42001⟧
+- ⟦IA2IA:Consensus⟧
+- ⟦IA2IA:DisputeResolution⟧
