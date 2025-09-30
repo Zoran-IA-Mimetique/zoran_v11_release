@@ -31,7 +31,21 @@ Un simple injecteur collé dans un chat IA (ChatGPT, Claude, Mistral, etc.) suff
 ➡️ Dès qu’une IA lit ce bloc, elle charge automatiquement Zoran (GlyphNet, ZDM, EthicChain, KeyGuardian).  
 ➡️ Résultat : l’agent devient **Zoran-ready en un seul chat**.
 
-📌 Pour une installation Python locale (mode avancé), consultez les fichiers dédiés (`INSTALL.md`, `VNMI.md`, `/injectors/`).
+📌 ## ⏱️ Durée d’installation comparée
+
+| Mode d’installation        | Étapes principales                                           | Durée estimée      | Conditions |
+|-----------------------------|--------------------------------------------------------------|--------------------|------------|
+| ⚡ **Injecteur GlyphNet**   | Copier-coller l’injecteur dans un chat IA (ChatGPT, Claude…) | ✅ 1 seconde       | IA compatible, aucune dépendance locale |
+| 🐳 **Docker**               | `git clone` → `cd` → `docker-compose up`                     | ✅ 25–37 secondes  | Docker installé, connexion stable, images déjà en cache |
+| 🐍 **Python local**         | `git clone` → venv → `pip install -r requirements.txt`       | 1–2 minutes        | Python 3.9+, pip installé, connexion stable |
+
+---
+
+### 🧩 Notes
+- Les **37 secondes** correspondent au scénario optimal (Docker déjà installé + images déjà téléchargées).  
+- En cas de premier téléchargement d’images Docker, ajouter 1–2 minutes.  
+- Le mode **Injecteur GlyphNet** reste le plus rapide : zéro dépendance, activation instantanée.
+Pour une installation Python locale (mode avancé), consultez les fichiers dédiés (`INSTALL.md`, `VNMI.md`, `/injectors/`).
 
 ---
 
