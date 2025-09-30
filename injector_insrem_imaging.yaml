@@ -1,0 +1,25 @@
+id: injector_insrem_imaging_v1
+title: "INSERM — Imaging Reproducibility Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit & instrumentation pipeline for MRI/CT image analysis"
+  lab: INSERM
+  domain: imaging
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/imaging", entry_point: "analyze_mri.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Imaging⟧","⟦Ethic:Chain⟧"] }
+  - capability: compliance.rgpd_anonymizer
+    params: { fields_to_anonymize: ["patient_id","dob"] }
+  - capability: tests.mutation
+    params: { threshold: 85 }
+  - capability: tests.property_based
+    params: { module: "tests/test_imaging.py" }
+  - capability: verification.formal
+    params: { tool: "Sympy,Z3", properties: ["no_nan","scale_invariance"] }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/insrem_imaging_trust_v1.json"

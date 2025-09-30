@@ -1,0 +1,28 @@
+id: injector_engine_alllabs
+title: "Injector-Engine — All major French research institutes"
+version: "1.0.0"
+metadata:
+  purpose: "Generate specialized injectors for INSERM, CEA, INRIA, INRAE, IRD"
+pipeline:
+  - capability: core.selector
+    params:
+      labs: [INSERM, CEA, INRIA, INRAE, IRD]
+  - capability: glyphnet.generator
+    params:
+      mode: "yaml_output"
+  - capability: glyphnet.instrumentation
+    params:
+      glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:AllLabs⟧","⟦Ethic:Chain⟧"]
+  - capability: tests.property_based
+    params:
+      module: "tests/test_engine.py"
+  - capability: tests.mutation
+    params:
+      threshold: 85
+  - capability: governance.trust_report
+    params:
+      sign_with: "KeyGuardian"
+      formats: ["json","pdf","latex"]
+outputs:
+  - name: trust_report
+    path: "./outputs/trust_report_engine.json"

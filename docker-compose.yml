@@ -1,4 +1,7 @@
-version: '3.8'
+version: '3'
 services:
-  nats:
-    image: nats:latest
+  injector_engine:
+    build: .
+    command: python injector_engine.py --lab INSERM --domain imaging
+    volumes:
+      - .:/workspace

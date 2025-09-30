@@ -1,5 +1,5 @@
 {
-  "injector": "MAX+One-Shot",
+  "injector": "Engine-AllLabs",
   "status": "PASS",
   "sections": {
     "Abstract": true,
@@ -9,16 +9,16 @@
     "Discussion": true,
     "Conclusion": true
   },
-  "word_count": 1500,
+  "word_count": 1300,
   "statistical_audit": {
     "confidence_interval": 0.95,
     "replicates": 100,
-    "p_value": 0.03
+    "p_value": 0.04
   },
   "numerical_stability": {
-    "condition_number": 1200,
+    "condition_number": 1500,
     "error_propagation": "low",
-    "stability_index": 0.98
+    "stability_index": 0.97
   },
   "signature": "KeyGuardian",
   "formats": ["json","pdf","latex"]

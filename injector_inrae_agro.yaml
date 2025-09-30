@@ -1,0 +1,21 @@
+id: injector_inrae_agro_v1
+title: "INRAE — Agro-Climate Simulation Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit reproducibility of agricultural and climate simulations"
+  lab: INRAE
+  domain: agro_climate
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/agro", entry_point: "simulate_agro.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Agro⟧","⟦Ethic:Chain⟧"] }
+  - capability: tests.sensitivity_analysis
+    params: { factors: ["temperature","rainfall","soil_quality"] }
+  - capability: tests.property_based
+    params: { module: "tests/test_agro.py" }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/inrae_agro_trust_v1.json"

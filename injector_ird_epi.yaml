@@ -1,0 +1,23 @@
+id: injector_ird_epi_v1
+title: "IRD — Epidemiology Field Data Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit reproducibility of epidemiology studies with heterogeneous data"
+  lab: IRD
+  domain: epidemiology
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/epi", entry_point: "analyze_epi.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Epi⟧","⟦Ethic:Chain⟧"] }
+  - capability: compliance.rgpd_anonymizer
+    params: { fields_to_anonymize: ["patient_id","village","dob"] }
+  - capability: tests.mutation
+    params: { threshold: 80 }
+  - capability: tests.property_based
+    params: { module: "tests/test_epi.py" }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/ird_epi_trust_v1.json"

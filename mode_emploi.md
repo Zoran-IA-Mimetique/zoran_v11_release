@@ -1,13 +1,15 @@
-# Mode d'emploi — Injecteur MAX+One-Shot
+# Mode d'emploi — Injector-Engine AllLabs
 
 ## Activation simple
-Copier-coller le bloc GlyphNet dans un chat IA :
+Copiez-collez le bloc GlyphNet :
 ```
-⟦INJECTOR:MAX+ONE:SHOT⟧⟦CORE:ΔM11.3⟧⟦MATH:Stability|Proof|Complexity⟧⟦TEST:PropertyBased|Formal|Chaos⟧⟦STAT:Confidence95|Replicates100⟧⟦AUTO:AuditSelf⟧⟦OUTPUT:JSON+PDF+LaTeX⟧⟦SIGN:KeyGuardian⟧⟦EXH:FULL⟧⟦CHK:Abstract|Intro|Methods|Results|Discussion|Conclusion⟧⟦LEN:1200+⟧⟦BLOCK:VALIDATION_CHECK⟧⟦END:Dossier one_shot_exhaustif — FIN⟧⟦RETRY:3⟧
+⟦INJECTOR:ENGINE:POLYMORPH⟧⟦CORE:ΔM11.3⟧⟦MODE:ONE_SHOT⟧⟦TARGET:INSERM,CEA,INRIA,INRAE,IRD⟧⟦AUTO:Selector⟧⟦OUTPUT:yaml,python,trust_json,pdf⟧⟦AUDIT:EthicChain|ZDM|KeyGuardian⟧⟦TESTS:mutation|property|chaos⟧⟦CHK:IMRAD|VALIDATION|RGPD|AI_ACT|ISO42001⟧⟦LEN:EXHAUSTIVE⟧⟦END:InjectorEngine_allLabs—FIN⟧
 ```
 
-## Utilisation avancée
-1. Exécuter le fichier injector_max_one_shot.yaml dans un pipeline Zoran/GlyphNet Runner.
-2. Le pipeline applique des tests numériques, statistiques et formels aux workflows.
-3. Si la sortie ne respecte pas les critères (IMRaD, longueur, VALIDATION_CHECK), l’auto-audit relance jusqu’à 3 fois.
-4. Les Trust Reports sont produits en JSON, PDF et LaTeX.
+## Générer un injecteur spécifique
+```bash
+python injector_engine.py --lab INSERM --domain imaging
+```
+
+## Trust Reports
+Les injecteurs produits émettent automatiquement des rapports de confiance (JSON, PDF, LaTeX) signés par KeyGuardian.

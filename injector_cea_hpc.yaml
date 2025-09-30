@@ -1,0 +1,21 @@
+id: injector_cea_hpc_v1
+title: "CEA — HPC Simulation Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit reproducibility of multi-physics HPC simulations"
+  lab: CEA
+  domain: hpc
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/hpc", entry_point: "simulate.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:HPC⟧","⟦Ethic:Chain⟧"] }
+  - capability: tests.numerical_stability
+    params: { tolerance: 1e-8, check_methods: ["condition_number","error_propagation"] }
+  - capability: tests.property_based
+    params: { module: "tests/test_hpc.py" }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/cea_hpc_trust_v1.json"
