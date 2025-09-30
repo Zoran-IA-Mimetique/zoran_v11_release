@@ -1,0 +1,28 @@
+{
+  "title": "Mimetic AI & NAD⁺: A Polymorphic Injector for Longevity Science, Industry, and Society",
+  "upload_type": "publication",
+  "publication_type": "article",
+  "creators": [
+    {
+      "name": "Tabary, Frédéric",
+      "affiliation": "INSTITUT🦋 IA INC., Montréal (Québec)",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "description": "Zoran aSiM V4: Mimetic AI polymorphic injector for NAD⁺/NMN/NR longevity science, industry, and society.",
+  "doi": "10.5281/zenodo.17238469",
+  "keywords": [
+    "MimeticAI", "IA Mimétique", "NAD", "NMN", "NR", "Longevity",
+    "ΔM11.3", "PolyResonator", "HyperGlottal", "EthicChain", "AI Act", "GDPR"
+  ],
+  "language": "eng",
+  "license": "MIT",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.16940525",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "components": [
+    { "name": "numpy", "version": "1.x" },
+    { "name": "pandas", "version": "1.x" },
+    { "name": "matplotlib", "version": "3.x" }
+  ]
+}

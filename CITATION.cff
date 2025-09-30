@@ -1,1 +1,23 @@
-CFF metadata citation...
+cff-version: 1.2.0
+title: "Mimetic AI & NAD⁺: A Polymorphic Injector for Longevity Science, Industry, and Society"
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Tabary"
+    given-names: "Frédéric"
+    affiliation: "INSTITUT🦋 IA INC., Montréal (Québec)"
+    email: "tabary01@gmail.com"
+doi: "10.5281/zenodo.17238469"
+version: "V4"
+date-released: "2025-09-30"
+keywords:
+  - MimeticAI
+  - NAD
+  - NMN
+  - NR
+  - Longevity
+  - ΔM11.3
+  - PolyResonator
+  - HyperGlottal
+  - EthicChain
+  - AI Act
+  - GDPR
