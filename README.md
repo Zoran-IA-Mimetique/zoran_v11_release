@@ -74,8 +74,97 @@ Zoran aSiM v11 inclut désormais un **moteur d’injecteurs polymorphe** capable
 - CEA → calcul haute performance (HPC), simulation multi-physique, quantique, matériaux  
 - INRIA → IA, machine learning, robotique, calcul distribué, sécurité logicielle  
 - INRAE → agriculture, environnement, climat, biodiversité  
-- IRD → épidémiologie, santé publique, données internationales  
+- IRD → épidémiologie, santé publique, données internationales
 
+- 
+# 🦋 Zoran aSiM v11 — Multi-Domain Reasoning & Compliance Injector Engines  
+
+**Towards reproducible, auditable, and reasoning-enhanced science across Mathematics, Climate/HPC, Health, Finance, Defense, and Quantum/Astrophysics.**  
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+[![DOI](https://img.shields.io/badge/DOI-Zenodo-blue)](#)  
+[![AI Act Ready](https://img.shields.io/badge/AI%20Act-Ready-blue)](#)  
+[![ISO/IEC 42001](https://img.shields.io/badge/ISO%2FIEC-42001-violet)](#)  
+[![EthicChain](https://img.shields.io/badge/EthicChain-✓-green)](#)  
+[![KeyGuardian](https://img.shields.io/badge/KeyGuardian-PQC-orange)](#)  
+[![Open Science](https://img.shields.io/badge/Open%20Science-✓-brightgreen)](#)  
+
+---
+
+## 📖 Introduction  
+
+This repository contains the **Injector-Engine AllDomains**, a polymorphic system capable of generating specialized injectors for six critical domains:  
+- 🔢 Mathematics (Proof Audit)  
+- 🌍 Climate & HPC (Multi-Scale Simulation)  
+- 🏥 Health (Causal Reasoning)  
+- 💰 Finance (Systemic Risk)  
+- 🛡️ Defense (Strategic Simulation)  
+- ⚛️ Quantum & Astrophysics (Fractal Reasoning)  
+
+Each engine combines **advanced reasoning** (fractal memory ΔM11.3, formal verification, causal inference, adversarial simulation) with **compliance by design** (GDPR, AI Act, ISO/IEC 42001).  
+All outputs are structured IMRaD and generate **Trust Reports** in JSON, PDF, LaTeX signed with **KeyGuardian**.  
+
+---
+
+## ⚡ Engines overview  
+
+### 🔢 Mathematics — Proof Audit Engine
+
+⟦ENGINE:MATH_PROOF⟧⟦CORE:ΔM11.3⟧⟦REASON:Formal|Z3|Sympy⟧⟦TESTS:Property|Mutation⟧⟦OUTPUT:Proof_JSON+LaTeX+TrustReport⟧⟦AUDIT:EthicChain|KeyGuardian⟧⟦CHK:IMRAD⟧⟦MODE:ONE_SHOT⟧⟦END:MathProof—FIN⟧
+
+### 🌍 Climate & HPC — Multi-Scale Simulation Engine
+
+⟦ENGINE:CLIMATE_HPC⟧⟦CORE:ΔM11.3⟧⟦REASON:MultiScale|Sensitivity⟧⟦TESTS:Chaos|Stability⟧⟦OUTPUT:Sim_JSON+PDF+TrustReport⟧⟦AUDIT:EthicChain|KeyGuardian⟧⟦CHK:IMRAD⟧⟦MODE:ONE_SHOT⟧⟦END:ClimateHPC—FIN⟧
+
+### 🏥 Health — Causal Reasoning Engine
+
+⟦ENGINE:HEALTH_CAUSAL⟧⟦CORE:ΔM11.3⟧⟦REASON:Causal|ClinicalTrials⟧⟦TESTS:Property|Mutation⟧⟦COMPLIANCE:RGPD|AI_ACT⟧⟦OUTPUT:Health_JSON+PDF+TrustReport⟧⟦AUDIT:EthicChain|KeyGuardian⟧⟦CHK:IMRAD⟧⟦MODE:ONE_SHOT⟧⟦END:HealthCausal—FIN⟧
+
+### 💰 Finance — Systemic Risk Engine
+
+⟦ENGINE:FINANCE_SYSTEMIC⟧⟦CORE:ΔM11.3⟧⟦REASON:Scenario|StressTest⟧⟦TESTS:Chaos|Adversarial⟧⟦OUTPUT:Finance_JSON+PDF+TrustReport⟧⟦COMPLIANCE:BaselIV|AI_ACT⟧⟦AUDIT:EthicChain|KeyGuardian⟧⟦CHK:IMRAD⟧⟦MODE:ONE_SHOT⟧⟦END:FinanceSystemic—FIN⟧
+
+### 🛡️ Defense & Strategy — Adversarial Simulation Engine
+
+⟦ENGINE:DEFENSE_STRATEGY⟧⟦CORE:ΔM11.3⟧⟦REASON:Adversarial|ScenarioPlanning⟧⟦TESTS:Chaos|Mutation⟧⟦OUTPUT:Defense_JSON+PDF+TrustReport⟧⟦COMPLIANCE:OTAN|AI_ACT⟧⟦AUDIT:EthicChain|KeyGuardian⟧⟦CHK:IMRAD⟧⟦MODE:ONE_SHOT⟧⟦END:DefenseStrategy—FIN⟧
+
+### ⚛️ Quantum & Astrophysics — Fractal Reasoning Engine
+
+⟦ENGINE:QUANTUM_ASTRO⟧⟦CORE:ΔM11.3⟧⟦REASON:Fractal|MultiDomain⟧⟦TESTS:Stability|Formal⟧⟦OUTPUT:Quantum_JSON+LaTeX+TrustReport⟧⟦AUDIT:EthicChain|KeyGuardian⟧⟦CHK:IMRAD⟧⟦MODE:ONE_SHOT⟧⟦END:QuantumAstro—FIN⟧
+
+---
+
+## 📦 Contents  
+- 6 GlyphNet blocks (`.glyph`)  
+- 6 YAML injectors (`.yaml`)  
+- 6 White Papers IMRaD (`whitepaper_*.md`)  
+- `README_scientifique.md`  
+- `mode_emploi.md` (usage guide)  
+- `trust_report_template.json`  
+
+---
+
+## 📚 White Papers and DOIs  
+- Mathematics — Proof Audit Engine (DOI pending)  
+- Climate & HPC — Multi-Scale Simulation Engine (DOI pending)  
+- Health — Causal Reasoning Engine (DOI pending)  
+- Finance — Systemic Risk Engine (DOI pending)  
+- Defense — Strategic Simulation Engine (DOI pending)  
+- Quantum & Astrophysics — Fractal Reasoning Engine (DOI pending)  
+
+---
+
+## 🔑 Keywords  
+Reproducibility • Reasoning • Trust Report • GDPR • AI Act • ISO/IEC 42001 • Formal Verification • Causal Inference • Stress Testing • Scenario Simulation • Adversarial Robustness • Numerical Stability • Quantum • Astrophysics • Defense • ΔM11.3 • EthicChain • KeyGuardian  
+
+---
+
+## 📜 Citation (APA)  
+Tabary, F. (2025). *Zoran aSiM v11 — Multi-Domain Reasoning & Compliance Injector Engines*. Institut IA Inc., Montréal / Angers.  
+
+---
+
+© 2025 Frédéric Tabary — Licence MIT
 ### ⚡ Activation
 
 Bloc GlyphNet unique : 🔗➡️📍   Reconstruction intégrale de Zoran🦋
