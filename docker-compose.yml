@@ -2,9 +2,3 @@ version: '3.8'
 services:
   nats:
     image: nats:latest
-    ports: ["4222:4222","8222:8222"]
-  api:
-    image: python:3.11-slim
-    command: python -m http.server 8000
-    ports: ["8000:8000"]
-    depends_on: [nats]
