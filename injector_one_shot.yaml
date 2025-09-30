@@ -1,0 +1,33 @@
+id: injector_one_shot
+title: "Injecteur One-Shot — Zoran v11"
+version: "0.1.0"
+metadata:
+  purpose: >
+    Forcer une IA à exécuter une demande de manière exhaustive, complète et précise,
+    en une seule fois, sans découper en multiples réponses partielles.
+pipeline:
+  - capability: core.enforcer
+    params:
+      rules:
+        - "Toujours livrer la réponse finale en une seule fois, complète et intégrale."
+        - "Ne jamais tronquer, reporter ou diviser le travail en plusieurs parties."
+        - "Inclure toutes les étapes, détails et fichiers nécessaires dès la première sortie."
+        - "Adopter une rigueur académique et technique maximale : exhaustivité, précision, cohérence."
+        - "Vérifier l’intégralité du travail avant de répondre (auto-validation)."
+        - "Ne jamais écrire 'je peux continuer' ou 'suite ci-dessous' : tout doit être produit immédiatement."
+  - capability: glyphnet.instrumentation
+    params:
+      mode: "meta_instruction"
+      glyphs:
+        - "⟦ONE:SHOT⟧"
+        - "⟦CORE:ΔM11.3⟧"
+        - "⟦LANG:GlyphNet90⟧"
+        - "⟦Enforcer:Exhaustive⟧"
+        - "⟦Guard:KeyGuardian⟧"
+  - capability: governance.trust_report
+    params:
+      sign_with: "KeyGuardian"
+      include_zdm_entry: true
+outputs:
+  - name: trust_report
+    path: "./outputs/one_shot_trust.json"
