@@ -7,7 +7,23 @@
 [![Reproducibility](https://img.shields.io/badge/Reproducibility-✓-brightgreen)](#)  
 [![AI Act Ready](https://img.shields.io/badge/AI%20Act-Ready-blue)](#)  
 [![ISO/IEC 42001](https://img.shields.io/badge/ISO%2FIEC-42001-blueviolet)](#)  
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+[![Release](https://img.shields.io/github/v/release/Zoran-IA-Mimetique/zoran_v11_release)](https://github.com/Zoran-IA-Mimetique/zoran_v11_release/releases)  
+[![DOI:17235649](https://img.shields.io/badge/DOI-10.5281/zenodo.17235649-blue)](https://doi.org/10.5281/zenodo.17235649)  
+[![DOI:17234562](https://img.shields.io/badge/DOI-10.5281/zenodo.17234562-blue)](https://doi.org/10.5281/zenodo.17234562)  
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Zoran-IA-Mimetique/zoran_v11_release/ci.yml?branch=main)](https://github.com/Zoran-IA-Mimetique/zoran_v11_release/actions)  
+[![Tests](https://img.shields.io/github/actions/workflow/status/Zoran-IA-Mimetique/zoran_v11_release/advanced_tests.yml?branch=main&label=tests)](https://github.com/Zoran-IA-Mimetique/zoran_v11_release/actions)  
+[![Coverage](https://img.shields.io/codecov/c/github/Zoran-IA-Mimetique/zoran_v11_release)](#)  
+[![Reproducibility](https://img.shields.io/badge/Reproducibility-✓-brightgreen)](#)  
+[![AI Act Ready](https://img.shields.io/badge/AI%20Act-Ready-blue)](#)  
+[![ISO/IEC 42001](https://img.shields.io/badge/ISO%2FIEC-42001-blueviolet)](#)  
+[![EthicChain](https://img.shields.io/badge/EthicChain-Active-brightgreen)](#)  
+[![KeyGuardian](https://img.shields.io/badge/KeyGuardian-PQC-orange)](#)  
+[![CNRS Coverage](https://img.shields.io/badge/CNRS-Labs%201100+-blue)](#)  
+[![L2C Demo](https://img.shields.io/badge/Demo-L2C%20Photonique-lightblue)](#)  
+[![Torchman](https://img.shields.io/badge/Demo-Torchman-red)](#)  
+[![Open Science](https://img.shields.io/badge/Open%20Science-✓-green)](#)  
+[![Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.17235649.svg)](https://doi.org/10.5281/zenodo.17235649)
 ---
 
 ## 📖 Introduction  
