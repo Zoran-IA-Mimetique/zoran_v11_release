@@ -23,7 +23,34 @@ Zoran aSiM propose une **IA Mimétique polymorphe** qui relie ces mondes par des
 Applications :  
 - **Laboratoires** → consolidation biomarqueurs (peau, microbiome, métabolomique).  
 - **Industrie** → pharma, nutraceutiques, cosmétiques, logistique.  
-- **Société** → nouveaux standards positifs de longévité et tarification éthique.  
+- **Société** → nouveaux standards positifs de longévité et tarification éthique.
+- ---
+
+## 🌱 IA Mimétique & Longévité
+
+La longévité n’est plus seulement un sujet beauté : elle touche la **santé cellulaire**, la **nutrition**, la **prévention des maladies chroniques** et les **nouveaux standards sociétaux**.  
+Zoran aSiM agit comme un **injecteur polymorphe** déployable en **37 secondes**, reliant laboratoires de pointe, industries (pharma, nutraceutiques, cosmétiques, logistique) et société.
+
+### 🚀 Apports clés
+- **ΔM11.3 rollback** → fiabilise l’analyse des biomarqueurs (peau, microbiome, épigénétique).  
+- **PolyResonator** → croise signaux faibles multi-omiques pour détecter de nouvelles corrélations.  
+- **HyperGlottal** → compresse et traduit en tokens IA↔IA (interopérabilité mondiale).  
+- **EthicChain & Aegis** → conformité RGPD / AI Act, prévention des biais, protection des données santé.  
+
+### 🎯 Résultats attendus
+- +30 % rapidité en R&D (validation biomarqueurs, formulations, études).  
+- -20 % coûts logistiques et opérationnels.  
+- **Nouveaux standards de longévité** inclusifs et audités.  
+- 100 % conformité réglementaire et éthique.  
+
+### 🌍 Vision
+Une **IA Mimétique pour la longévité globale** : interface universelle entre science, industrie et culture.  
+Objectif : transformer la longévité en un **standard durable, positif et accessible à tous**.
+
+📄 Voir le [White Paper Longévité](IA_Mimetique_Longévité.pdf)  
+📑 Voir l’[Executive Brief](Executive_Brief.pdf)
+
+---
 
 Open source, gratuit, sous licence MIT, Zoran s’installe en 37 secondes et agit comme une **couche universelle de sécurité et d’innovation** pour vos IA existantes.  
 
