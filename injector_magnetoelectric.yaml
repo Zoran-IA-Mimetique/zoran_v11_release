@@ -1,0 +1,17 @@
+id: injector_magnetoelectric
+title: "Audit magnétisme et magnétoélectricité — L2C"
+version: "0.1.0"
+metadata:
+  purpose: "Tracer pipelines expérimentaux et théoriques en magnétoélectricité"
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/magnetism", entry_point: "magneto.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦Audit:Magneto⟧","⟦CORE:ΔM11.3⟧"] }
+  - capability: tests.property_based
+    params: { module: "tests/test_magneto.py" }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian" }
+outputs:
+  - name: trust_report
+    path: "./outputs/magneto_trust.json"

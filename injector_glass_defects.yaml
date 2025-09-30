@@ -1,0 +1,17 @@
+id: injector_glass_defects
+title: "Audit défauts et excitations structurales — L2C"
+version: "0.1.0"
+metadata:
+  purpose: "Tracer pipelines Python modélisant les verres structuraux et leurs défauts"
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/glass", entry_point: "defects.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Glass⟧"] }
+  - capability: tests.property_based
+    params: { module: "tests/test_glass.py" }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian" }
+outputs:
+  - name: trust_report
+    path: "./outputs/glass_trust.json"

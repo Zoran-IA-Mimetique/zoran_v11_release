@@ -1,0 +1,17 @@
+id: injector_spintronics
+title: "Audit spintronique — L2C"
+version: "0.1.0"
+metadata:
+  purpose: "Tracer pipelines Python sur matériaux spintroniques et magnétisme quantique"
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/spintronics", entry_point: "spintronics.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦Audit:Spintronics⟧","⟦CORE:ΔM11.3⟧"] }
+  - capability: tests.mutation
+    params: { threshold: 80 }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian" }
+outputs:
+  - name: trust_report
+    path: "./outputs/spintronics_trust.json"

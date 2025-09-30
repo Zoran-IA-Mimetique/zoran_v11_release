@@ -1,1 +1,17 @@
-contenu complet de injector_optics_photonics...
+id: injector_optics_photonics
+title: "Audit optique et photonique — L2C"
+version: "0.1.0"
+metadata:
+  purpose: "Auditer pipelines Python en optique non-linéaire, lasers, excitons"
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/optics", entry_point: "photonics.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦Audit:Photonics⟧","⟦CORE:ΔM11.3⟧"] }
+  - capability: tests.mutation
+    params: { threshold: 85 }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian" }
+outputs:
+  - name: trust_report
+    path: "./outputs/photonics_trust.json"
