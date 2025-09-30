@@ -1,0 +1,15 @@
+id: injector_vnmi
+title: "Audit VNMI — Virtual Node Mimetic Injector"
+version: "0.1.0"
+metadata:
+  purpose: "Activer VNMI dans un pipeline Python avec Zoran v11"
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/vnmi", entry_point: "vnmi.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦VNMI:Activate⟧","⟦CORE:ΔM11.3⟧","⟦LANG:GlyphNet90⟧","⟦Aegis:EthicChain⟧","⟦Guard:KeyGuardian⟧"] }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", include_zdm_entry: true }
+outputs:
+  - name: trust_report
+    path: "./outputs/vnmi_trust.json"
