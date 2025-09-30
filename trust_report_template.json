@@ -1,0 +1,25 @@
+{
+  "injector": "MAX+One-Shot",
+  "status": "PASS",
+  "sections": {
+    "Abstract": true,
+    "Introduction": true,
+    "Methods": true,
+    "Results": true,
+    "Discussion": true,
+    "Conclusion": true
+  },
+  "word_count": 1500,
+  "statistical_audit": {
+    "confidence_interval": 0.95,
+    "replicates": 100,
+    "p_value": 0.03
+  },
+  "numerical_stability": {
+    "condition_number": 1200,
+    "error_propagation": "low",
+    "stability_index": 0.98
+  },
+  "signature": "KeyGuardian",
+  "formats": ["json","pdf","latex"]
+}

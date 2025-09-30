@@ -1,0 +1,25 @@
+id: injector_max_one_shot
+title: "Injecteur MAX+One-Shot — Zoran aSiM"
+version: "1.0.0"
+metadata:
+  purpose: "Combiner exhaustivité (One-Shot) et rigueur mathématique (MAX) pour produire des documents scientifiques reproductibles et auto-validés"
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/models", entry_point: "main.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:MathProof⟧"] }
+  - capability: tests.property_based
+    params: { module: "tests/test_models.py" }
+  - capability: tests.numerical_stability
+    params: { tolerance: 1e-8, check_methods: ["condition_number","error_propagation","stability_index"] }
+  - capability: tests.formal_verification
+    params: { solver: "z3", strategy: "sympy_check" }
+  - capability: tests.statistical_audit
+    params: { confidence_interval: 0.95, replicates: 100 }
+  - capability: governance.auto_audit
+    params: { retries: 3, enforce: true }
+  - capability: governance.trust_report
+    params: { formats: ["json","pdf","latex"], sign_with: "KeyGuardian" }
+outputs:
+  - name: trust_report
+    path: "./outputs/trust_report_max_one_shot.json"

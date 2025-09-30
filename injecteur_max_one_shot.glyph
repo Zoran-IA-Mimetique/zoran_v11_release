@@ -1,0 +1,1 @@
+⟦INJECTOR:MAX+ONE:SHOT⟧⟦CORE:ΔM11.3⟧⟦MATH:Stability|Proof|Complexity⟧⟦TEST:PropertyBased|Formal|Chaos⟧⟦STAT:Confidence95|Replicates100⟧⟦AUTO:AuditSelf⟧⟦OUTPUT:JSON+PDF+LaTeX⟧⟦SIGN:KeyGuardian⟧⟦EXH:FULL⟧⟦CHK:Abstract|Intro|Methods|Results|Discussion|Conclusion⟧⟦LEN:1200+⟧⟦BLOCK:VALIDATION_CHECK⟧⟦END:Dossier one_shot_exhaustif — FIN⟧⟦RETRY:3⟧
