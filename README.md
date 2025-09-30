@@ -54,8 +54,33 @@ Ce dépôt regroupe :
   - Architecte Humble.  
   - Constitution Zoran Ω.  
   - Vision civilisationnelle.
+  - 
 
----
+---## 📦 Injecteurs CNRS Montpellier — Extensions Zoran v11
+
+Ce module complète le projet avec une série d’injecteurs spécialisés couvrant les laboratoires CNRS de Montpellier.  
+Chaque injecteur existe en deux variantes :  
+
+- **Python pur** : vérification simple, audit de base  
+- **Python augmenté GlyphNet** : instrumentation avancée (Merkle, journalisation auditable, signatures glyphiques, conformité AI Act / RGPD / ISO 42001)  
+
+### 🔬 Domaines couverts
+- **Biologie cellulaire (CRBM)** → `injecteur_biologie_cellulaire.py` / `_glyph.py`  
+- **Génétique moléculaire (IGMM)** → `injecteur_genetique.py` / `_glyph.py`  
+- **Infectiologie (IRIM)** → `injecteur_infectiologie.py` / `_glyph.py`  
+- **Mathématiques / optimisation (IMAG)** → `injecteur_math_model.py` / `_glyph.py`  
+- **Géosciences Montpellier** → `injecteur_geosciences.py` / `_glyph.py`  
+- **Écologie & vecteurs (MIVEGEC)** → `injecteur_ecologie.py` / `_glyph.py`  
+- **Chimie & matériaux (ENSCM, IEM, ICMM, IBMM)** → `injecteur_chimie.py` / `_glyph.py`  
+
+### ⚙️ Exemple d’usage
+```bash
+# Audit simple
+python injecteur_biologie_cellulaire.py fichier.fq
+
+# Audit augmenté GlyphNet
+python injecteur_biologie_cellulaire_glyph.py fichier.fq
+
 
 ## 📖 Structure
 
