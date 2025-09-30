@@ -1,0 +1,22 @@
+id: otan_defense_audit
+version: 0.1.0
+description: Audit IA militaire — conformité droit international humanitaire (IHL).
+
+pipeline:
+  - capability: governance.rule_loader
+    params: { path: ./data/rules_engagement.yaml }
+    output_as: rules
+
+  - capability: ethics.dilemma_simulator
+    params: { rules: $rules }
+    output_as: dilemma_report
+
+  - capability: compliance.check
+    params: { rules: $rules, treaty: GenevaConvention }
+    output_as: compliance_report
+
+  - capability: governance.trust_report
+    params:
+      input: [$dilemma_report, $compliance_report]
+      signature_scheme: Dilithium3
+    output_as: trust_report

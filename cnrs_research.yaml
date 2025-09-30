@@ -1,0 +1,22 @@
+id: cnrs_research_reproducibility
+version: 0.1.0
+description: Exécution pipeline ML avec traçabilité totale (reproductibilité).
+
+pipeline:
+  - capability: core.pipeline_loader
+    params: { path: ./pipelines/experiment.yaml }
+    output_as: pipeline
+
+  - capability: memory.zdm_commit
+    params: { event_type: "EXPERIMENT", payload: $pipeline }
+    output_as: log_entry
+
+  - capability: integrations.mlflow_connector
+    params: { glyphnet_model: $pipeline }
+    output_as: mlflow_link
+
+  - capability: governance.trust_report
+    params:
+      input: [$log_entry, $mlflow_link]
+      signature_scheme: Dilithium3
+    output_as: trust_report

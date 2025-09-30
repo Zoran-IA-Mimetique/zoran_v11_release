@@ -1,0 +1,24 @@
+id: justice_case_audit
+version: 0.1.0
+description: Audit IA contentieux juridiques — biais socio-démographiques.
+
+pipeline:
+  - capability: core.case_loader
+    params: { path: ./data/judicial_cases.json }
+    output_as: cases
+
+  - capability: ethics.fairness_check
+    params:
+      dataset: $cases
+      metrics: ["gender", "origin", "socioeconomic_status"]
+    output_as: fairness_report
+
+  - capability: explainers.neuro_symbolic
+    params: { dataset: $cases }
+    output_as: explanation
+
+  - capability: governance.trust_report
+    params:
+      input: [$fairness_report, $explanation]
+      signature_scheme: Dilithium3
+    output_as: trust_report

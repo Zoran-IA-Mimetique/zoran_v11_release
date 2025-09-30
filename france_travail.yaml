@@ -1,0 +1,24 @@
+id: france_travail_audit
+version: 0.1.0
+description: Audit RGPD + équité (genre, âge) sur CV/lettres candidats France Travail.
+
+pipeline:
+  - capability: core.loader
+    params: { path: ./data/cv_samples/ }
+    output_as: raw_docs
+
+  - capability: compliance.rgpd_anonymizer
+    params: { documents: $raw_docs }
+    output_as: anonymized_docs
+
+  - capability: ethics.fairness_check
+    params:
+      documents: $anonymized_docs
+      metrics: ["gender_balance", "age_distribution"]
+    output_as: fairness_report
+
+  - capability: governance.trust_report
+    params:
+      input: $fairness_report
+      signature_scheme: Dilithium3
+    output_as: trust_report

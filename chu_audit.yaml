@@ -1,0 +1,22 @@
+id: chu_model_audit
+version: 0.1.0
+description: Audit de modèle médical — conformité AI Act + détection dérive.
+
+pipeline:
+  - capability: core.model_loader
+    params: { path: ./models/diagnostic_model.pkl }
+    output_as: model
+
+  - capability: security.zkp_compliance_check
+    params: { model: $model, rule: AIAct_HighRisk }
+    output_as: compliance_proof
+
+  - capability: drift.detection
+    params: { model: $model, dataset: ./data/patients_validation.csv }
+    output_as: drift_report
+
+  - capability: governance.trust_report
+    params:
+      input: [$compliance_proof, $drift_report]
+      signature_scheme: Dilithium3
+    output_as: trust_report

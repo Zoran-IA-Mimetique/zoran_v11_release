@@ -1,0 +1,22 @@
+id: onu_climate_audit
+version: 0.1.0
+description: Simulation et audit transparence données climatiques ONU.
+
+pipeline:
+  - capability: core.climate_loader
+    params: { path: ./data/climate_models/ }
+    output_as: models
+
+  - capability: causal.discovery
+    params: { models: $models }
+    output_as: causal_graph
+
+  - capability: ethics.ethic_chain
+    params: { principle: intergenerational_equity }
+    output_as: ethic_proof
+
+  - capability: governance.trust_report
+    params:
+      input: [$causal_graph, $ethic_proof]
+      signature_scheme: Dilithium3
+    output_as: trust_report

@@ -1,0 +1,22 @@
+id: edf_grid_monitoring
+version: 0.1.0
+description: Monitoring prédictif du réseau énergétique EDF.
+
+pipeline:
+  - capability: telemetry.ingest
+    params: { source: ./data/grid_signals.csv }
+    output_as: signals
+
+  - capability: drift.detection
+    params: { dataset: $signals }
+    output_as: drift_report
+
+  - capability: profiling.energy
+    params: { dataset: $signals }
+    output_as: energy_profile
+
+  - capability: governance.trust_report
+    params:
+      input: [$drift_report, $energy_profile]
+      signature_scheme: Dilithium3
+    output_as: trust_report

@@ -1,0 +1,22 @@
+id: cnil_audit_rgpd
+version: 0.1.0
+description: Vérification RGPD datasets (anonymisation, données sensibles, logs immuables).
+
+pipeline:
+  - capability: core.dataset_loader
+    params: { path: ./data/personal_data.csv }
+    output_as: dataset
+
+  - capability: compliance.rgpd_anonymizer
+    params: { dataset: $dataset }
+    output_as: anonymized
+
+  - capability: compliance.sensitive_data_check
+    params: { dataset: $anonymized }
+    output_as: sensitive_report
+
+  - capability: governance.trust_report
+    params:
+      input: $sensitive_report
+      signature_scheme: Dilithium3
+    output_as: trust_report

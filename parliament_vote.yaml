@@ -1,0 +1,22 @@
+id: parliament_vote_demo
+version: 0.1.0
+description: Simulation de vote citoyen décentralisé avec PolyResonator.
+
+pipeline:
+  - capability: governance.proposal_loader
+    params: { path: ./data/proposals.json }
+    output_as: proposals
+
+  - capability: dynamics.opinion
+    params: { proposals: $proposals }
+    output_as: votes
+
+  - capability: governance.polyresonator
+    params: { votes: $votes, method: KemenyYoung }
+    output_as: consensus
+
+  - capability: governance.trust_report
+    params:
+      input: $consensus
+      signature_scheme: Dilithium3
+    output_as: trust_report

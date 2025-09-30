@@ -1,0 +1,18 @@
+id: framework_self_audit
+version: 0.1.0
+description: Pipeline d'auto-audit continu du framework Zoran.
+
+pipeline:
+  - capability: core.health_check
+    params: {}
+    output_as: health_status
+
+  - capability: security.sbom_scan
+    params: { path: ./ }
+    output_as: sbom_report
+
+  - capability: governance.trust_report
+    params:
+      input: [$health_status, $sbom_report]
+      signature_scheme: Dilithium3
+    output_as: audit_report

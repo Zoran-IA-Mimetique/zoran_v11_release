@@ -1,0 +1,20 @@
+id: bpi_fraud_audit
+version: 0.1.0
+description: Audit modèle anti-fraude bancaire — biais & conformité.
+
+pipeline:
+  - capability: core.dataset_loader
+    params: { path: ./data/fraud_samples.csv }
+    output_as: raw_data
+
+  - capability: ethics.fairness_check
+    params:
+      dataset: $raw_data
+      metrics: ["no_redlining", "gender_bias", "income_balance"]
+    output_as: fairness_report
+
+  - capability: governance.trust_report
+    params:
+      input: $fairness_report
+      signature_scheme: Dilithium3
+    output_as: trust_report

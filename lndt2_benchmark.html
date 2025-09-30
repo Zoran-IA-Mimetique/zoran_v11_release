@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LNDT2 Benchmark Runner (Standalone)</title>
+    <script>
+      function runBenchmark() {
+        const score = Math.floor(500 + Math.random() * 500);
+        document.getElementById("result").innerText = "Score : " + score;
+      }
+    </script>
+  </head>
+  <body class="bg-gray-50 font-sans p-8">
+    <h1 class="text-2xl font-bold mb-4">LNDT2 Benchmark Runner</h1>
+    <button onclick="runBenchmark()" class="px-4 py-2 bg-indigo-600 text-white rounded">
+      Lancer le benchmark
+    </button>
+    <div id="result" class="mt-4"></div>
+  </body>
+</html>
