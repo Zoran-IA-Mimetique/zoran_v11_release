@@ -1,0 +1,27 @@
+id: injector_lirmm
+title: Injecteur — LIRMM (auto-généré)
+version: 0.1.0
+metadata:
+  purpose: Injecteur spécifique pour LIRMM
+pipeline:
+- capability: core.loader
+  params:
+    path: workspace/LIRMM/
+    entry_point: lirmm_pipeline.py
+- capability: safety.policy
+  params: {}
+- capability: tests.chaos
+  params: {}
+- capability: glyphnet.instrumentation
+  params: {}
+- capability: tests.property_based
+  params:
+    module: tests/test_lirmm.py
+- capability: engines.sandbox
+  params: {}
+- capability: governance.trust_report
+  params:
+    sign_with: KeyGuardian
+outputs:
+- name: trust_report
+  path: ./outputs/lirmm_trust.json

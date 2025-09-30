@@ -1,0 +1,38 @@
+[
+  {
+    "name": "CRBM",
+    "axes": [
+      "adhésion cellulaire",
+      "YAP-TAZ",
+      "intégrines β1"
+    ],
+    "entry_point": "crbm_pipeline.py"
+  },
+  {
+    "name": "IGMM",
+    "axes": [
+      "génomique",
+      "virologie",
+      "bioinformatique"
+    ],
+    "entry_point": "igmm_pipeline.py"
+  },
+  {
+    "name": "IBMM",
+    "axes": [
+      "peptides",
+      "protéomique",
+      "métabolomique"
+    ],
+    "entry_point": "ibmm_pipeline.py"
+  },
+  {
+    "name": "LIRMM",
+    "axes": [
+      "robotique",
+      "IA",
+      "cognition"
+    ],
+    "entry_point": "lirmm_pipeline.py"
+  }
+]

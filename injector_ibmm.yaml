@@ -1,0 +1,26 @@
+id: injector_ibmm
+title: Injecteur — IBMM (auto-généré)
+version: 0.1.0
+metadata:
+  purpose: Injecteur spécifique pour IBMM
+pipeline:
+- capability: core.loader
+  params:
+    path: workspace/IBMM/
+    entry_point: ibmm_pipeline.py
+- capability: glyphnet.instrumentation
+  params: {}
+- capability: tests.mutation
+  params:
+    threshold: 80
+- capability: tests.property_based
+  params:
+    module: tests/test_ibmm.py
+- capability: governance.trust_report
+  params:
+    sign_with: KeyGuardian
+- capability: engines.sandbox
+  params: {}
+outputs:
+- name: trust_report
+  path: ./outputs/ibmm_trust.json

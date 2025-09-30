@@ -1,0 +1,28 @@
+id: injector_igmm
+title: Injecteur — IGMM (auto-généré)
+version: 0.1.0
+metadata:
+  purpose: Injecteur spécifique pour IGMM
+pipeline:
+- capability: core.loader
+  params:
+    path: workspace/IGMM/
+    entry_point: igmm_pipeline.py
+- capability: glyphnet.instrumentation
+  params: {}
+- capability: compliance.rgpd_anonymizer
+  params:
+    fields_to_anonymize:
+    - patient_id
+    - sample_id
+- capability: tests.property_based
+  params:
+    module: tests/test_igmm.py
+- capability: governance.trust_report
+  params:
+    sign_with: KeyGuardian
+- capability: engines.sandbox
+  params: {}
+outputs:
+- name: trust_report
+  path: ./outputs/igmm_trust.json

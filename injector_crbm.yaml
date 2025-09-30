@@ -1,0 +1,24 @@
+id: injector_crbm
+title: Injecteur — CRBM (auto-généré)
+version: 0.1.0
+metadata:
+  purpose: Injecteur spécifique pour CRBM
+pipeline:
+- capability: core.loader
+  params:
+    path: workspace/CRBM/
+    entry_point: crbm_pipeline.py
+- capability: glyphnet.instrumentation
+  params: {}
+- capability: tests.property_based
+  params:
+    module: tests/test_crbm.py
+- capability: tests.mutation
+  params:
+    threshold: 80
+- capability: governance.trust_report
+  params:
+    sign_with: KeyGuardian
+outputs:
+- name: trust_report
+  path: ./outputs/crbm_trust.json
