@@ -1,9 +1,1 @@
-# INJECTOR.md — One-Shot Exhaustif
-
-Bloc GlyphNet à copier-coller :
-
-```
 ⟦ONE:SHOT⟧⟦CORE:ΔM11.3⟧⟦EXH:FULL⟧⟦CHK:Abstract|Intro|Methods|Results|Discussion|Conclusion⟧⟦LEN:900+⟧⟦BLOCK:VALIDATION_CHECK⟧⟦END:Dossier one_shot_exhaustif — FIN⟧⟦RETRY:3⟧⟦Aegis:EthicChain⟧⟦Guard:KeyGuardian⟧
-```
-
-👉 Cet injecteur force toute IA à générer une réponse complète et exhaustive en une seule fois.

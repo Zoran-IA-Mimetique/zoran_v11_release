@@ -1,0 +1,38 @@
+id: injector_force_one_shot
+title: "Force One-Shot Exhaustif — Zoran Enforcer"
+version: "1.0.0"
+metadata:
+  purpose: "Forcer le mode One-Shot Exhaustif + validation automatique et retry"
+pipeline:
+  - capability: core.prompt_injector
+    params:
+      injection_text: |
+        (Voir pré-prompt dans README)
+  - capability: glyphnet.enforcer
+    params:
+      enforce_mode: "one_shot_exhaustif"
+      acceptance_criteria:
+        min_words: 900
+        required_sections:
+          - "Abstract"
+          - "Introduction"
+          - "Methods"
+          - "Results"
+          - "Discussion"
+          - "Conclusion"
+        required_block: "VALIDATION_CHECK"
+      max_retries: 3
+      retry_prompt: |
+        The previous response did not meet the acceptance criteria. Extend and complete the missing sections. Ensure VALIDATION_CHECK and "Dossier one_shot_exhaustif — FIN" are present.
+  - capability: validator.run
+    params:
+      script: "./validators/one_shot_validator.py"
+      input_source: "last_output"
+  - capability: governance.trust_report
+    params:
+      sign_with: "KeyGuardian"
+outputs:
+  - name: final_document
+    path: "./outputs/one_shot_document.txt"
+  - name: trust_report
+    path: "./outputs/one_shot_trust.json"
