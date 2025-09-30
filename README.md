@@ -71,7 +71,25 @@ Cette édition rassemble **45+ injecteurs YAML** couvrant :
 - **LIRMM** (robotique, IA, robotique médicale & industrielle, IA cognitive, neuroinformatique)  
 - **IES** (capteurs, électronique, photonique, sécurité hardware)  
 - **LUPM** (astrophysique, physique quantique, astroparticules)  
-- **Injecteurs transversaux** (fédération, partage de données, climat, éthique, human-AI).  
+- **Injecteurs transversaux** (fédération, partage de données, climat, éthique, human-AI).
+- ## 🧩 Moteur à Injecteurs Zoran v11 — Production
+
+Un moteur intégré permet désormais de **générer automatiquement des injecteurs ultra-précis** pour chaque laboratoire CNRS, à partir de leurs axes de recherche.  
+Cela permet d’obtenir une couverture large (tous les labos) tout en gardant la précision métier.
+
+---
+
+### ⚙️ Contenu du moteur
+- **moteur_injecteurs.py** → script Python qui assemble les injecteurs.  
+- **labs_catalog.json** → catalogue des laboratoires (exemple : CRBM, IGMM, IBMM, LIRMM).  
+- **injector_*.yaml** → injecteurs auto-générés pour chaque labo, basés sur ses thématiques.  
+- **README_MOTEUR.md** → guide d’utilisation.
+
+---
+
+### 🚀 Utilisation
+```bash
+python moteur_injecteurs.py
 
 📦 [Télécharger le bundle CNRS Montpellier](https://huggingface.co/datasets/Zoran-IA-Mimetique/Zoran_CNRS_Montpellier_All_Injectors/resolve/main/Zoran_CNRS_Montpellier_All_Injectors.zip)
 
