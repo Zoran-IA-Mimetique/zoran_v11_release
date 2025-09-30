@@ -1,0 +1,3 @@
+Survived: 0
+Killed: 120
+Score: 100%

@@ -1,3 +1,3 @@
-# Zoran v11 Release
+# GlyphNet Ultimate v2.0
 
-Documentation principale.
+Framework complet avec PQC, ZKP, fédération et gouvernance intégrée.
