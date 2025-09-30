@@ -1,0 +1,20 @@
+id: injector_climate_hpc_v1
+title: "Climate & HPC — Multi-Scale Simulation Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit reproducibility of HPC climate and multi-scale models"
+  domain: climate_hpc
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/climate", entry_point: "simulate_climate.py" }
+  - capability: glyphnet.instrumentation
+    params: { glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Climate⟧"] }
+  - capability: tests.sensitivity_analysis
+    params: { factors: ["temperature","rainfall","CO2"] }
+  - capability: tests.chaos
+    params: { perturbations: 50 }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/climate_hpc_trust.json"

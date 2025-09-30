@@ -1,0 +1,20 @@
+id: injector_health_causal_v1
+title: "Health — Causal Reasoning Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit causal inference in clinical trials and health studies"
+  domain: health
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/health", entry_point: "analyze_trial.py" }
+  - capability: glyphnet.instrumentation
+    params: { glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Health⟧"] }
+  - capability: compliance.rgpd_anonymizer
+    params: { fields_to_anonymize: ["patient_id","dob"] }
+  - capability: tests.property_based
+    params: { module: "tests/test_health.py" }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/health_causal_trust.json"

@@ -1,0 +1,20 @@
+id: injector_math_proof_v1
+title: "Mathematics — Proof Audit Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit mathematical proofs, reproducibility with formal methods"
+  domain: mathematics
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/math", entry_point: "theorem.py" }
+  - capability: glyphnet.instrumentation
+    params: { glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Math⟧"] }
+  - capability: verification.formal
+    params: { tool: "Sympy,Z3", properties: ["no_nan","consistency","proof"] }
+  - capability: tests.property_based
+    params: { module: "tests/test_math.py" }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/math_proof_trust.json"

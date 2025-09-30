@@ -1,5 +1,5 @@
 {
-  "injector": "Engine-AllLabs",
+  "engine": "multi-domain",
   "status": "PASS",
   "sections": {
     "Abstract": true,
@@ -9,16 +9,14 @@
     "Discussion": true,
     "Conclusion": true
   },
-  "word_count": 1300,
-  "statistical_audit": {
-    "confidence_interval": 0.95,
+  "metrics": {
     "replicates": 100,
-    "p_value": 0.04
+    "confidence_interval": 0.95,
+    "p_value": 0.03
   },
   "numerical_stability": {
-    "condition_number": 1500,
-    "error_propagation": "low",
-    "stability_index": 0.97
+    "condition_number": 1200,
+    "error_propagation": "low"
   },
   "signature": "KeyGuardian",
   "formats": ["json","pdf","latex"]

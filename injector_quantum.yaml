@@ -1,0 +1,20 @@
+id: injector_quantum_astro_v1
+title: "Quantum & Astrophysics — Fractal Reasoning Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit reproducibility in quantum and astrophysics simulations"
+  domain: quantum_astro
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/quantum", entry_point: "simulate_quantum.py" }
+  - capability: glyphnet.instrumentation
+    params: { glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Quantum⟧"] }
+  - capability: tests.numerical_stability
+    params: { tolerance: 1e-9, check_methods: ["condition_number","error_propagation"] }
+  - capability: verification.formal
+    params: { tool: "Sympy,Z3", properties: ["unitarity","conservation_laws"] }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/quantum_astro_trust.json"

@@ -1,0 +1,18 @@
+id: injector_finance_systemic_v1
+title: "Finance — Systemic Risk Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit systemic financial models, stress-test reproducibility"
+  domain: finance
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/finance", entry_point: "stress_test.py" }
+  - capability: glyphnet.instrumentation
+    params: { glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Finance⟧"] }
+  - capability: tests.adversarial
+    params: { attacks: ["shock_scenario","market_crash"] }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/finance_systemic_trust.json"

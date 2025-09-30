@@ -1,0 +1,5 @@
+The Zoran aSiM v11 Multi-Domain Injector Engines introduce six specialized engines designed for critical domains: Mathematics, Climate/HPC, Health, Finance, Defense, and Quantum/Astrophysics. 
+Each engine combines advanced reasoning (fractal memory ΔM11.3, causal inference, adversarial simulation, formal proofs) with compliance by design (GDPR, AI Act, ISO/IEC 42001). 
+Outputs are IMRaD-structured and produce multi-format Trust Reports (JSON, PDF, LaTeX) signed with KeyGuardian. 
+Demonstrators include proof audits, climate simulations, clinical trials, financial stress-tests, defense adversarial strategies, and quantum/astrophysics reproducibility. 
+This release provides GlyphNet one-shot blocks, YAML injectors, IMRaD white papers, mode d'emploi, and trust report templates for each domain.

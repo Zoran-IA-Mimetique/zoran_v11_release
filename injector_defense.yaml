@@ -1,0 +1,20 @@
+id: injector_defense_strategy_v1
+title: "Defense — Strategic Simulation Injector"
+version: "1.0.0"
+metadata:
+  purpose: "Audit adversarial strategy simulations for defense and planning"
+  domain: defense
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/defense", entry_point: "simulate_strategy.py" }
+  - capability: glyphnet.instrumentation
+    params: { glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:Defense⟧"] }
+  - capability: tests.chaos
+    params: { perturbations: 100 }
+  - capability: tests.mutation
+    params: { threshold: 80 }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", output_formats: ["json","pdf","latex"] }
+outputs:
+  - name: trust_report
+    path: "./outputs/defense_strategy_trust.json"

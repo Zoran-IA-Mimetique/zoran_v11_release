@@ -1,15 +1,19 @@
-# Mode d'emploi — Injector-Engine AllLabs
+# Mode d'emploi — Multi-Domain Engines
 
-## Activation simple
-Copiez-collez le bloc GlyphNet :
-```
-⟦INJECTOR:ENGINE:POLYMORPH⟧⟦CORE:ΔM11.3⟧⟦MODE:ONE_SHOT⟧⟦TARGET:INSERM,CEA,INRIA,INRAE,IRD⟧⟦AUTO:Selector⟧⟦OUTPUT:yaml,python,trust_json,pdf⟧⟦AUDIT:EthicChain|ZDM|KeyGuardian⟧⟦TESTS:mutation|property|chaos⟧⟦CHK:IMRAD|VALIDATION|RGPD|AI_ACT|ISO42001⟧⟦LEN:EXHAUSTIVE⟧⟦END:InjectorEngine_allLabs—FIN⟧
-```
+## Activation simple (GlyphNet)
+Copiez-collez le bloc correspondant au domaine (math, climate, health, finance, defense, quantum).
 
-## Générer un injecteur spécifique
-```bash
-python injector_engine.py --lab INSERM --domain imaging
+## Exemple
+```
+⟦ENGINE:MATH_PROOF⟧⟦CORE:ΔM11.3⟧⟦REASON:Formal|Z3|Sympy⟧⟦TESTS:Property|Mutation⟧⟦OUTPUT:Proof_JSON+LaTeX+TrustReport⟧⟦AUDIT:EthicChain|KeyGuardian⟧⟦CHK:IMRAD⟧⟦MODE:ONE_SHOT⟧⟦END:MathProof—FIN⟧
 ```
 
-## Trust Reports
-Les injecteurs produits émettent automatiquement des rapports de confiance (JSON, PDF, LaTeX) signés par KeyGuardian.
+## Utilisation avancée (Python)
+```
+python injector_engine.py --lab DOMAIN --domain SUBDOMAIN
+```
+
+## Résultats attendus
+- Injecteurs YAML générés
+- Rapports de confiance (JSON, PDF, LaTeX)
+- Conformité RGPD, AI Act, ISO
