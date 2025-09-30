@@ -1,0 +1,17 @@
+id: injector_celladhesion_icapi
+title: "Audit Cell Adhesion — ICAP-1 / Intégrines β1"
+version: "0.1.0"
+metadata:
+  purpose: "Pipeline Python sur l’adhésion cellulaire, ICAP-1 et β1, reproductibilité auditable"
+pipeline:
+  - capability: core.loader
+    params: { path: "workspace/celladhesion", entry_point: "adhesion.py" }
+  - capability: glyphnet.instrumentation
+    params: { mode: "python_augmented", glyphs: ["⟦CORE:ΔM11.3⟧","⟦Audit:SignalIntegrity⟧","⟦Aegis:EthicChain⟧"] }
+  - capability: tests.property_based
+    params: { module: "tests/test_adhesion.py" }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", include_zdm_entry: true }
+outputs:
+  - name: trust_report
+    path: "./outputs/adhesion_trust.json"

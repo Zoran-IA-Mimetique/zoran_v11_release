@@ -1,0 +1,17 @@
+id: injector_federation_cnrs
+title: "Audit fédération multi-labos — CNRS Montpellier"
+version: "0.1.0"
+metadata:
+  purpose: "Auditer pipelines fédérés entre toutes les UMR CNRS Montpellier avec consensus"
+pipeline:
+  - capability: governance.polyresonator
+    params:
+      labs: ["CRBM","IGMM","IBMM","LEM","LIRMM","IES","LUPM"]
+      method: "KemenyYoung"
+  - capability: glyphnet.instrumentation
+    params: { mode: "federation", glyphs: ["⟦Consensus:PolyRes⟧","⟦CORE:ΔM11.3⟧"] }
+  - capability: governance.trust_report
+    params: { sign_with: "KeyGuardian", include_zdm_entry: true }
+outputs:
+  - name: federation_report
+    path: "./outputs/federation_trust.json"
