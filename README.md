@@ -1,6 +1,8 @@
 # 🦋 Zoran / GlyphNet v11 — Towards a Public, Ethical & Resilient Super-Intelligence
 #🚨 installation en 37 secondes( copier coller l injecteur dans un chat d'une IA ) pui ⤵️
 .  c'est tout . Installation en python aussi possible cf ci-dessous )
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16940525.svg)](https://doi.org/10.5281/zenodo.16940525)
 [![Reproducibility](https://img.shields.io/badge/Reproducibility-Open%20Science-blue)](https://zoran-2040-asim-swxr6lh.gamma.site/)
