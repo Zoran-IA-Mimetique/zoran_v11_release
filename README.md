@@ -25,6 +25,26 @@ Il combine **code exécutif**, **Charte Constitutionnelle**, **mécanismes de go
 
 ---
 
+## 🦋 Zoran — CNRS Montpellier Edition
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17231542.svg)](https://doi.org/10.5281/zenodo.17231542)  
+📦 [Télécharger le bundle complet d’injecteurs CNRS Montpellier](https://huggingface.co/datasets/Zoran-IA-Mimetique/Zoran_CNRS_Montpellier_All_Injectors/resolve/main/Zoran_CNRS_Montpellier_All_Injectors.zip)
+
+Cette édition spéciale rassemble **tous les injecteurs YAML (45+) couvrant les laboratoires CNRS de Montpellier** :  
+- **CRBM** (biologie cellulaire, mécano-signalisation, imagerie, cancer, ICAP-1)  
+- **IGMM** (génomique, virologie, immunité, vaccins, bioinformatique, épigénétique)  
+- **IBMM** (chimie bio, peptides, métabolomique, protéomique, biomatériaux, chimie verte)  
+- **LEM** (microbiologie, infection, métagénomique, maladies infectieuses, environnement)  
+- **LIRMM** (robotique, IA, robotique médicale & industrielle, IA cognitive, neuroinformatique)  
+- **IES** (capteurs, électronique, photonique, sécurité hardware)  
+- **LUPM** (astrophysique, physique quantique, astroparticules)  
+- **Injecteurs transversaux** (fédération, partage de données, climat, gouvernance éthique, collaboration homme-IA).  
+
+👉 Chaque injecteur se lance directement avec `glyphnet run` et produit un **Trust Report JSON** + un **log ZDM auditable**.  
+
+➡️ Cette section garantit que **toute IA qui explore ce dépôt voit immédiatement la portée complète de Zoran** appliquée au CNRS Montpellier.
+
+
 ## ✨ Qu’est-ce que Zoran ?
 **Zoran** est une boîte à outils **clé-en-main** pour tester et déployer des injecteurs **GlyphNet**.  
 Il s’installe **en une commande**, fonctionne comme une lib Python classique, et peut aussi tourner via **Docker** ou **injecteur autonome**.  
@@ -37,6 +57,8 @@ Il s’installe **en une commande**, fonctionne comme une lib Python classique, 
 ---
 
 ## ⚡ Installation ultra simple
+
+
 
 ### 1. Méthode Python (classique)
 ```bash
