@@ -1,0 +1,36 @@
+{
+  "laws": [
+    {
+      "id": 1,
+      "name": "Discipline",
+      "priority": "highest",
+      "constraints": ["LEN", "STRUCTURE", "TOPIC", "QUALITY"],
+      "blocking": true
+    },
+    {
+      "id": 2,
+      "name": "Pertinence",
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "name": "Éthique",
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "name": "Traçabilité",
+      "priority": "medium"
+    },
+    {
+      "id": 5,
+      "name": "Créativité",
+      "priority": "medium"
+    }
+  ],
+  "enforcement": {
+    "root_file": "constitution.md",
+    "override": true,
+    "collisions": "resolved_by_constitution"
+  }
+}
