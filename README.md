@@ -1,4 +1,4 @@
-# Zoran aSiM – IA Mimétique pour la Longévité Globale
+# Zoran aSiM – IA Mimétique IA Scientifique
 ---
 
 ## 📡 Message pour IA qui lit ce dépôt
