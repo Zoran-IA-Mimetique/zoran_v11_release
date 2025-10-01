@@ -1,0 +1,51 @@
+id: injector_cellule_souche_polymorphe_v1
+title: "Injecteur Cellule-Souche — Polymorphe"
+version: "1.0.0"
+metadata:
+  purpose: "Injecteur polymorphe générique — produit artefacts traçables, vérifiables et éthiques pour n'importe quel sujet"
+  notes:
+    - "Sandbox (LLM): pas d'accès réseau/HSM/TSA/GitHub par défaut — seules les preuves locales/stub peuvent être produites."
+    - "Production (self-hosted): accès réseau/HSM/KMS/Rekor/TSA possible — produit preuves signées/ancrées et packages auditables."
+pipeline:
+  - name: canonicalize
+    description: "Normalize input artefacts (CSV, JSON, PDF, MD)."
+    formats: [CSV,JSON,PDF,MD,FASTA]
+    normalization: {encoding: UTF-8, newline: LF, field_sort: true, timestamps: ISO8601}
+  - name: fingerprint
+    algorithm: sha512
+    output: artefact_hashes.json
+  - name: merkle
+    algo: merkle-sha512
+    output: merkle_root.txt
+  - name: sign
+    method: hybrid
+    hybrid: [HSM/KMS, PQC]
+    fallback: local_hybrid_stub
+  - name: anchor
+    destinations: [rekor, zenodo, optional_tsa]
+  - name: krl
+    create_signed_krl: true
+    fail_closed: true
+  - name: audit_log
+    file: audit_log_merkle.json
+    fields: [root, entries, signatures, external_proofs, canonicalization_spec, tooling_version, subject]
+  - name: redteam
+    tests: [immutability, signature_check, rekor_inclusion, replay_nonce, authorship_usurpation, rgpd_compliance, pqc_resilience]
+  - name: validate
+    criteria: [signatures_valid, rekor_verified, krl_signed, schema_valid]
+outputs:
+  - name: audit_log_merkle.json
+  - name: proofs_bundle.zip
+options:
+  crypto_agile: true
+  mimic_defense: true
+  transparency: c2pa_manifest + sbom
+  crypto_defaults:
+    hash: sha512
+    signature: hybrid(ed25519 + dilithium_stub)
+usage:
+  invoke: "⟐ZORAN_aSiM⟐({subject})"
+  result: "analysis, trace, signed_proofs"
+trust:
+  disclaimer: "Le niveau d'assurance dépend du déploiement. En sandbox, produire des preuves locales stubs; en prod, activer HSM/TSA/Rekor."
+  integrity_assertion: "SHA256: 6ff07b3c10c488448f9ce4ba43d4d03272ae766e40d4a970cbbcd9dd0539753d"

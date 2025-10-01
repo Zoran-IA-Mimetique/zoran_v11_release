@@ -1,0 +1,7 @@
+name: RedTeam Gate (placeholder)
+on: [pull_request]
+jobs:
+  redteam:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run RedTeam tests (simulations) - placeholder"

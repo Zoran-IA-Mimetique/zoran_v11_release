@@ -1,0 +1,7 @@
+name: HSM→Rekor→KRL (placeholder)
+on: [workflow_dispatch]
+jobs:
+  sign_anchor:
+    runs-on: self-hosted
+    steps:
+      - run: echo "Placeholder workflow - configure self-hosted runner and secrets"

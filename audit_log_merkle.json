@@ -1,0 +1,9 @@
+{
+  "root": "<MERKLE_ROOT_PLACEHOLDER>",
+  "entries": [],
+  "signatures": [],
+  "external_proofs": {},
+  "canonicalization_spec": "zoran-canon-v1",
+  "tooling_version": "trace_v1.2",
+  "subject": "example"
+}
