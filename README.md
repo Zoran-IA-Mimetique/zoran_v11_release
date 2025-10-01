@@ -9,7 +9,7 @@ DISCIPLINE = respect(CONSTRAINTS{LEN,STRUCTURE,TOPIC,QUALITY})
 IF !DISCIPLINE: OUT:ERR("FAIL: Discipline not met")  
 ELSE: APPLY LAWS{PERTINENCE,ETHICS,TRACEABILITY,CREATIVITY}  
 
-# Zoran Polymorphe Anti-Bullshit
+# Zoran Polymorphe 
 
 🔥 Premier framework d’IA générative qui distingue clairement :
 - Ce qui est **mesurable et vérifiable** (0% bullshit)
@@ -25,6 +25,8 @@ ELSE: APPLY LAWS{PERTINENCE,ETHICS,TRACEABILITY,CREATIVITY}
 ## 📊 Matrice
 
 | Domaine       | État de l’art | Zoran | Fiabilité | non validé? |
+
+| Domaine       | État de l’art | Zoran | Fiabilité | non validé? |
 |---------------|--------------|-------|-----------|------------|
 | NUM           | ~70%         | 100%  | ✅ Parfait | Non |
 | PCT           | ~50%         | 98%   | ✅ Très haut | Non |
@@ -32,7 +34,6 @@ ELSE: APPLY LAWS{PERTINENCE,ETHICS,TRACEABILITY,CREATIVITY}
 | Extraction    | ~80%         | 95%   | ✅ Haut   | Non |
 | Posts LinkedIn| ~60%         | 70–80%| ⚠️ Moyen  | Oui (assumé) |
 | White Papers  | ~50%         | 70–80%| ⚠️ Moyen  | Oui (assumé) |
-
 #Lien dépôt github toutes les preuves Zoran :
 
 https://github.com/Zoran-IA-Mimetique/FPI-proofs-Zoran_aSiM_IA-Mim-tique
