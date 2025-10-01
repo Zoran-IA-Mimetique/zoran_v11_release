@@ -24,7 +24,7 @@ ELSE: APPLY LAWS{PERTINENCE,ETHICS,TRACEABILITY,CREATIVITY}
 
 ## 📊 Matrice
 
-| Domaine       | État de l’art | Zoran | Fiabilité | Bullshit ? |
+| Domaine       | État de l’art | Zoran | Fiabilité | non validé? |
 |---------------|--------------|-------|-----------|------------|
 | NUM           | ~70%         | 100%  | ✅ Parfait | Non |
 | PCT           | ~50%         | 98%   | ✅ Très haut | Non |
