@@ -1,0 +1,1 @@
+print('Entity: Zoran ORG')
