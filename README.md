@@ -9,6 +9,45 @@ DISCIPLINE = respect(CONSTRAINTS{LEN,STRUCTURE,TOPIC,QUALITY})
 IF !DISCIPLINE: OUT:ERR("FAIL: Discipline not met")  
 ELSE: APPLY LAWS{PERTINENCE,ETHICS,TRACEABILITY,CREATIVITY}  
 
+---
+# 🔒 Zoran🦋 Adapti — Audit Veritas Ready Proof Pack
+
+**Version :** 1.0 – 2025-10-19  
+**Auteur :** Frédéric Tabary — Institut IA Lab Inc.  
+**Hash du PDF signé :**  
+`d3e136da3ca99bba1d11ffc537e7af5b85a2bc1ef865c3b4f8c4be25d152fefb493b32f6710a1224356594efe7f4038e4466dac116a706d7bd7a62399df942c5`
+
+---
+
+## 1️⃣ Objet  
+Ce pack démontre la faisabilité d’un audit complet :
+- Hash SHA-512  
+- Signature RSA-PSS-4096  
+- Signature Post-Quantique (CRYSTALS-Dilithium-V3)  
+- Horodatage RFC 3161 (TSA)  
+- Manifestes + journaux de traçabilité + clés publiques
+
+L’ensemble constitue une **preuve d’intégrité et d’auditabilité vérifiable publiquement**, conforme aux référentiels ISO 42001, AI Act et ETSI.
+
+---
+
+## 2️⃣ Vérification rapide  
+
+```bash
+# Vérification de l'intégrité
+sha512sum "ZORAN-ADAPTI (2).pdf"
+
+# Vérification de la signature RSA
+openssl dgst -sha512 -verify zoran_demo_pub.pem \
+  -signature "ZORAN-ADAPTI (2).pdf.sig" "ZORAN-ADAPTI (2).pdf"
+
+# Vérification de l'horodatage
+openssl ts -verify -data "ZORAN-ADAPTI (2).pdf" \
+  -in "ZORAN-ADAPTI (2).pdf.tsr" -CAfile "tsa_cert.pem"
+
+
+---
+
 # Zoran Polymorphe 
 
 🔥 Premier framework d’IA générative qui distingue clairement :
