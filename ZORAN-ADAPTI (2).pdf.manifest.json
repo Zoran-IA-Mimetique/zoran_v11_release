@@ -1,0 +1,12 @@
+{
+  "filename": "ZORAN-ADAPTI (2).pdf",
+  "sha512": "d3e136da3ca99bba1d11ffc537e7af5b85a2bc1ef865c3b4f8c4be25d152fefb493b32f6710a1224356594efe7f4038e4466dac116a706d7bd7a62399df942c5",
+  "timestamp": "2025-10-19T21:17:00Z",
+  "hash_algo": "SHA-512",
+  "sign_algo": "RSA-PSS-4096",
+  "pqc_sign_algo": "CRYSTALS-Dilithium-V3",
+  "pqc_signature_b64": "U2ltdWxhdGVkU0lnbmVkRGF0YVBhY2s=",
+  "pqc_key_id": "ZORAN-PQC-DEMO-\u03a94",
+  "signer_key_id": "zoran-local-demo",
+  "pubkey_file": "zoran_demo_pub.pem"
+}

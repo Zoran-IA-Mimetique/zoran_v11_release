@@ -1,0 +1,1 @@
+Placeholder content for ZORAN-ADAPTI (2).pdf.sig
